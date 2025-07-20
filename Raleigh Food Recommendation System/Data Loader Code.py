@@ -8,4 +8,6 @@ import matplotlib.pyplot as plt
 import os
 
 #Restaurant Storage
-restaurants = pd.read_csv()
+restaurants = pd.read_csv('Restaurants_in_Wake_County.csv')
+
+restaurants.head(2)
