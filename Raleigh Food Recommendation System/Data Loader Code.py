@@ -10,4 +10,4 @@ import os
 #Restaurant Storage
 restaurants = pd.read_csv('Restaurants_in_Wake_County.csv')
 
-restaurants.head(2)
+restaurants.head()
