@@ -2,7 +2,7 @@
 #Food Recommendation System Attempt 2
 
 #import my other code with the restaurants data
-from Data_Loader_Code import dlc
+from Data_Loader_Code import get_cuisine
 
 
 #Opening message
@@ -17,18 +17,19 @@ print("Are you looking for a specific place to eat or searching for recommendati
 
 #For a specific place to eat
 #Search bar
-search = str(input("Where would you like to eat?\nSearch by name or location.")).lower()
+search_name = str(input("Where would you like to eat?\nSearch by name.")).strip()
+search_location = str(input("Where would you like to eat?\nSearch by location.")).strip()
 matching_words = []
 
-result = dlc(get_cuisine))
+result = (get_cuisine)
 business = result['businesses'][0]
     
-if result:
-    print("\n✅ Restaurant Found:")
-    print("Name:", business['name'])
-    print("Address:", ", ".join(business['location']['display_address']))
-    print("Rating:", business['rating'])
-    print("Cuisine:", ", ".join([cat['title'] for cat in business['categories']]))
-    print("Phone:", business['phone'])
-else:
-    print("\n❌ No results found.")
+#if result:
+    #print("\n✅ Restaurant Found:")
+    #print("Name:", business['name'])
+    #print("Address:", ", ".join(business['location']['display_address']))
+    #print("Rating:", business['rating'])
+    #print("Cuisine:", ", ".join([cat['title'] for cat in business['categories']]))
+    #print("Phone:", business['phone'])
+#else:
+    #print("\n❌ No results found.")
