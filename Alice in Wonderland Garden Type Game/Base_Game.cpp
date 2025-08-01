@@ -37,6 +37,21 @@ int main() {
                 cout << "\nThe garage? Ok, well let's head there.\n";
                 cout << "\n \n";
                 cout << "\nThe Garage\n"
+                cout << "\n \n";
+                cout << "\nOk, take a look around! Quickly! You've got to get to work!\n";
+                cout << "\n...i'm hearing an odd sound...\n";
+                cout << "\nWhere will you look?\n";
+                cout << "\n1. Under the car\n";
+                cout << "\n2. In boxes\n";
+                cout << "\n3. In the yard supplies\n";
+                
+                int choice;
+                cin >> choice;
+                if (choice == 1) {
+                    cout << "\nDid you see anything?\n";
+                    cout << "\nNO? Well keep looking! Time's running out!\n";
+                }
+
             }
         } else if (choice == 2) {
             cout << "\nSee you later!\n";
